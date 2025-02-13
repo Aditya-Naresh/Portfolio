@@ -14,19 +14,13 @@ const Home = () => {
   const audioRef = useRef(new Audio(song));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
-  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
 
   useEffect(() => {
-    audioRef.current.muted = true;
-
     if(isPlayingMusic){
-      audioRef.current.play().then(() => {
-        audioRef.current.muted = false;
-      }).catch((err) => {
-        console.log(err);
-      });
+      audioRef.current.play();
     }
 
     return () => {
