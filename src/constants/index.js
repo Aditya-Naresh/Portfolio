@@ -200,7 +200,7 @@ export const projects = [
         iconUrl: tutorconnect,
         theme: 'btn-back-orange',
         name: 'Tutor Connect',
-        description: 'Designed and built an application where students can directly connect with the tutor and pay per sessions they require using DRF and React',
+        description: 'Designed and built an online tuition platform using Django Rest Framework and React',
         link: 'https://tutor-connect-aditya.vercel.app/',
     },
    
