@@ -26,7 +26,15 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
-
+import django from './django.svg'
+import docker from './docker.svg'
+import aws from './aws.svg'
+import python from './python.svg'
+import redis from './redis.svg'
+import azure from './azure.svg'
+import webrtc from './webrtc.svg'
+import tutorconnect from './tutorconnect.png'
+import ecommerce from './ecommerce.png'
 export {
     css,
     express,
@@ -55,5 +63,14 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    django,
+    docker,
+    aws,
+    python,
+    redis,
+    azure, 
+    webrtc,
+    tutorconnect,
+    ecommerce
 }
