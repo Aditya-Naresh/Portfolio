@@ -19,8 +19,14 @@ const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
 
   useEffect(() => {
+    audioRef.current.muted = true;
+
     if(isPlayingMusic){
-      audioRef.current.play();
+      audioRef.current.play().then(() => {
+        audioRef.current.muted = false;
+      }).catch((err) => {
+        console.log(err);
+      });
     }
 
     return () => {
