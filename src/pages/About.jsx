@@ -16,7 +16,7 @@ const About = () => {
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Developer based in India, specializing in building applications and
+          Fullstack Developer based in India, specializing in building applications and
           solving problems.
         </p>
       </div>
